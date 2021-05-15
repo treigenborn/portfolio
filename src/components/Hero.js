@@ -8,11 +8,10 @@ const Hero = () => {
       className="hero-container"
       style={{ backgroundImage: `url(${backgroundSvg})` }}
     >
-      <div className="textito">
-        <h1 className="hero-title">
-          Hi! I am Tobias a software developer from argentina
-        </h1>
-        <p>a software developer from argentina</p>
+      <div className="hero-text">
+        <h1 className="hero-title">Hi! I am Tobias</h1>
+        <p className="hero-p">a software developer from argentina</p>
+        <button className="hero-btn">SEE WORK!</button>
       </div>
     </div>
   );
