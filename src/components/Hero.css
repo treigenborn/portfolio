@@ -27,7 +27,7 @@
 }
 
 .hero-btn {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: rgb(98, 0, 238);
   font-weight: 700;
   width: 40%;
@@ -35,7 +35,10 @@
   border: 2px solid white;
   margin-top: 20px;
   padding: 12px;
-  border-radius: 30px;
+  border-radius: 25px;
+  line-height: 18px;
+  letter-spacing: 1.54px;
+  cursor: pointer;
 }
 
 .hero-btn:hover {

@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar-container">
       <div className="logo">
-        <h1>TR</h1>
+        <h1></h1>
       </div>
       <div className="menu-icon" onClick={handleClick}>
         {click ? <grIcons.GrClose /> : <faIcons.FaBars />}
