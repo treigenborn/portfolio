@@ -1,6 +1,7 @@
 import React from "react";
 import * as fiIcons from "react-icons/fi";
-function Cards(props) {
+
+const Cards = props => {
   const Background = props.src;
   return (
     <>

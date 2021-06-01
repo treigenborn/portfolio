@@ -1,0 +1,326 @@
+.contact-form-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+}
+.contact-form-wrapper {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 90%;
+  border-radius: 25px;
+  padding: 110px 130px 157px 148px;
+  min-height: 50vh;
+}
+.form-anim {
+  width: 390px;
+  margin-left: 50px;
+}
+.contact-form {
+  width: 390px;
+  margin-right: 50px;
+}
+
+.contact-form-title {
+  margin-top: 30px;
+  display: block;
+  font-weight: 900;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 36px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+input.form-input {
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+}
+
+input.form-input[name='email'] {
+  padding: 0 30px 0 50px;
+}
+
+textarea.form-input {
+  min-height: 150px;
+  border-radius: 25px;
+  padding: 14px 30px 0 50px;
+  resize: none;
+}
+
+.focus-form-input {
+  margin: 0;
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px 0 50px;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(132, 106, 221, 0.5);
+}
+
+.form-input:focus + .focus-form-input {
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 60px 25px;
+    opacity: 0;
+  }
+}
+
+.symbol-form-input {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  padding-left: 30px;
+  pointer-events: none;
+  color: #aaaaaa;
+  font-size: 15px;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-form-input {
+  color: #846add;
+  padding-left: 22px;
+}
+
+.form-btn-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.form-btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #846add;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  transition: all 0.4s;
+}
+
+.form-btn:hover {
+  background: #333333;
+}
+
+.email-confirmation-title {
+  font-size: 2rem;
+  padding: 20px;
+  color: #333333;
+  margin: 30px auto;
+}
+
+.email-confirmation-text {
+  padding: 20px;
+  font-size: 1.3rem;
+  margin: 30px auto;
+  font-weight: 300;
+  color: #333333;
+}
+
+/*============================================================*/
+/*                         RESPONSIVE                         */
+/*============================================================*/
+@media (max-width: 1200px) {
+  .form-anim {
+    width: 33.5%;
+  }
+
+  .contact-form {
+    width: 44%;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-form-wrapper {
+    padding: 110px 80px 157px 90px;
+  }
+
+  .form-anim {
+    width: 35%;
+  }
+
+  .contact-form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-wrapper {
+    padding: 110px 80px 157px 80px;
+  }
+
+  .form-anim {
+    display: none;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-wrapper {
+    padding: 10px 15px 57px 15px;
+  }
+  .contact-form {
+    width: 70%;
+  }
+}
+
+/* ============================================================== */
+
+/* SVG and animations */
+/* ============================================================== */
+
+.anim {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#tipito {
+  height: 500px;
+  position: absolute;
+  left: 8%;
+}
+
+#sobre-mensaje {
+  position: absolute;
+  height: 400px;
+  left: 10%;
+}
+
+#avion-1 {
+  animation: paper-plane-scoping 4s alternate infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+}
+#avion-2 {
+  animation-timing-function: ease-out;
+  animation: rotate 4s forwards infinite;
+  transform-origin: center center;
+}
+
+@keyframes paper-plane-scoping {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(400px, -100px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+#papel {
+  animation: mover-papel 4s linear infinite;
+  z-index: 1;
+}
+
+@keyframes mover-papel {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#check #Vector_13 {
+  animation: color 4s linear infinite;
+}
+
+@keyframes color {
+  0% {
+    fill: '#6C63FF';
+  }
+  90% {
+    fill: '#6C63FF';
+  }
+  100% {
+    fill: #00ff00;
+  }
+}
+
+#cabeza {
+  animation: rotate 5s linear infinite;
+  transform-origin: bottom center;
+  transform-box: fill-box;
+}
+
+/* ================================================================= */
+/*                          MEDIA QUERIES                            */
+/* ================================================================= */
+
+@media screen and (max-width: 1300px) {
+  #tipito {
+    display: none;
+  }
+  #sobre-mensaje {
+    left: -10%;
+  }
+}

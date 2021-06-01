@@ -7,10 +7,7 @@
 }
 
 .hero-text {
-  position: relative;
-  top: 20%;
-  /* left: 30%; */
-  margin: 0 auto;
+  margin: 180px auto;
   text-align: center;
 }
 
@@ -43,4 +40,16 @@
 
 .hero-btn:hover {
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .hero-text {
+    margin-top: 50px;
+  }
 }

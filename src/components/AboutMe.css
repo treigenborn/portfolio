@@ -1,0 +1,84 @@
+.about-me-container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  display: block;
+}
+.about-me-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.info-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #333;
+}
+.info-text {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #333;
+}
+.skills {
+  margin-top: 30px;
+  max-width: 500px;
+}
+.skills a {
+  text-decoration: none;
+}
+.skill-icon {
+  font-size: 70px;
+  margin: 10px 20px;
+  color: #111;
+}
+.about-me-img-container {
+  width: 400px;
+}
+
+.about-me-img {
+  width: 400px;
+  border-radius: 50%;
+  padding: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-me-wrapper {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .about-me-img-container {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    width: 100%;
+  }
+  .about-me-img {
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+  }
+  .about-me-wrapper {
+    padding: 20px;
+  }
+  .about-me-info {
+    width: 100%;
+  }
+  .info-title {
+    font-size: 2rem;
+  }
+  .info-text {
+    font-size: 1rem;
+  }
+}
