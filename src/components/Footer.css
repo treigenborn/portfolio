@@ -39,6 +39,9 @@
   .footer-links {
     margin-left: -121.2px;
   }
+  .footer-links a {
+    width: 30px;
+  }
   .footer-link {
     margin: 0 10px;
     font-size: 1.3rem;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutMe.css';
 import * as faIcons from 'react-icons/fa';
+import * as siIcons from 'react-icons/si';
 const AboutMe = () => {
   return (
     <section className='about-me-container' id='about'>
@@ -19,32 +20,77 @@ const AboutMe = () => {
           </p>
           <h3 className='skills-title'>My skills are:</h3>
           <div className='skills'>
-            <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+              className='skill-links'
+            >
               <faIcons.FaHtml5 className='skill-icon' />
+              <p>HTML5</p>
             </a>
-            <a href='https://developer.mozilla.org/en-US/docs/Web/CSS'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://developer.mozilla.org/en-US/docs/Web/CSS'
+            >
               <faIcons.FaCss3Alt className='skill-icon' />
+              <p>CSS3</p>
             </a>
-            <a href='https://sass-lang.com/'>
+            <a target='_blank' rel='noreferrer' href='https://sass-lang.com/'>
               <faIcons.FaSass className='skill-icon' />
+              <p>Sass</p>
             </a>
-            <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
+            <a target='_blank' rel='noreferrer' href='https://redux.js.org/'>
+              <siIcons.SiRedux className='skill-icon' />
+              <p>Redux</p>
+            </a>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://firebase.google.com/'
+            >
+              <siIcons.SiFirebase className='skill-icon' />
+              <p>Firebase</p>
+            </a>
+
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+            >
               <faIcons.FaJsSquare className='skill-icon' />
+              <p>JavaScript</p>
             </a>
-            <a href='https://reactjs.org/'>
+            <a target='_blank' rel='noreferrer' href='https://reactjs.org/'>
               <faIcons.FaReact className='skill-icon' />
+              <p>ReactJS</p>
             </a>
-            <a href='https://getbootstrap.com/'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://getbootstrap.com/'
+            >
               <faIcons.FaBootstrap className='skill-icon' />
+              <p>Bootstrap</p>
             </a>
-            <a href='https://figma.com'>
+            <a target='_blank' rel='noreferrer' href='https://figma.com'>
               <faIcons.FaFigma className='skill-icon' />
+              <p>Figma</p>
             </a>
           </div>
+          <a
+            href='https://drive.google.com/file/d/16ZjQd8suozDiJ6y0kZqwHBEBXBWajUhH/view?usp=sharing'
+            className='about-me-resume'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Download Resume
+          </a>
         </div>
         <div className='about-me-img-container'>
           <img
-            src='./images/foto-perfil-cuadrada.jpg'
+            src='./images/foto-cuadrada.jpg'
             alt='nemo pic'
             className='about-me-img'
           />

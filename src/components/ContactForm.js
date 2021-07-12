@@ -5,50 +5,50 @@ import * as faIcons from 'react-icons/fa';
 
 const ContactForm = () => {
   const [text, setText] = useState(
-    <form class='contact-form' onSubmit={sendEmail}>
-      <h3 class='contact-form-title'>Get in touch</h3>
+    <form className='contact-form' onSubmit={sendEmail}>
+      <h3 className='contact-form-title'>Get in touch</h3>
 
-      <div class='input-wrapper'>
+      <div className='input-wrapper'>
         <input
-          class='form-input'
+          className='form-input'
           type='text'
           name='name'
           placeholder='Name'
           required
         />
 
-        <span class='focus-form-input'></span>
-        <span class='symbol-form-input'>
+        <span className='focus-form-input'></span>
+        <span className='symbol-form-input'>
           <faIcons.FaUser aria-hidden='true' />
         </span>
       </div>
 
-      <div class='input-wrapper'>
+      <div className='input-wrapper'>
         <input
-          class='form-input'
+          className='form-input'
           type='text'
           name='email'
           placeholder='Email'
           required
         />
-        <span class='focus-form-input'></span>
-        <span class='symbol-form-input'>
+        <span className='focus-form-input'></span>
+        <span className='symbol-form-input'>
           <faIcons.FaEnvelope aria-hidden='true' />
         </span>
       </div>
 
-      <div class='input-wrapper'>
+      <div className='input-wrapper'>
         <textarea
-          class='form-input'
+          className='form-input'
           name='message'
           placeholder='Message'
           required
         />
-        <span class='focus-form-input'></span>
+        <span className='focus-form-input'></span>
       </div>
 
-      <div class='form-btn-container'>
-        <button class='form-btn'>Send</button>
+      <div className='form-btn-container'>
+        <button className='form-btn'>Send</button>
       </div>
     </form>
   );
